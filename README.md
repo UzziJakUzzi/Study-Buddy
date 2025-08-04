@@ -32,8 +32,8 @@ The server responds with a JSON object that includes:
 }
 
 This diagram illustrates the communication between the test program and the Pomodoro timer microservice:
-UML - Pomodoro Timer Session.png
-
+[UML - Pomodoro Timer Session.png
+](https://github.com/UzziJakUzzi/Study-Buddy/blob/9d6cf9fc252111a86905103ff5d38931e7bd2bce/UML%20-%20Pomodoro%20Timer%20Session.png)
 
 - CORS enabled (via cors package)
 - Run npm install to install dependencies:
