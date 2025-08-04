@@ -32,7 +32,7 @@ The server responds with a JSON object that includes:
 }
 
 This diagram illustrates the communication between the test program and the Pomodoro timer microservice:
-![UML Sequence Diagram](./uml-pomodoro.png)
+UML - Pomodoro Timer Session.png
 
 
 - CORS enabled (via cors package)
