@@ -1,4 +1,6 @@
 # Study-Buddy
+Jackson Happel-Walvatne
+Microservice A – Pomodoro Timer
 
 This microservice provides a Pomodoro session timer that starts a 25-minute countdown and returns both start and end timestamps.
 
@@ -41,10 +43,6 @@ Dependencies
 Run this to install dependencies:
 - bash:
   npm install express cors
-
-
-Jackson Happel-Walvatne
-Microservice A – Pomodoro Timer
 
 
 
