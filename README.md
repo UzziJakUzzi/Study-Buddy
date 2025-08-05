@@ -39,7 +39,7 @@ Dependencies
 - CORS enabled (via cors package)
   
 Run this to install dependencies:
-- bash
+- bash:
   npm install express cors
 
 
