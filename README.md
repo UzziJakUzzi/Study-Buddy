@@ -45,6 +45,6 @@ Run this to install dependencies:
 
 Jackson Happel-Walvatne
 Microservice A – Pomodoro Timer
-Summer 2025 CS361
+
 
 
