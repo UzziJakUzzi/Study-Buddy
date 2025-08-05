@@ -32,7 +32,7 @@ The server responds with a JSON object like:
   "end_time": "2025-08-04T20:25:00Z"
 }
 ```
-This diagram illustrates the communication between the test program and the Pomodoro timer microservice:
+Communication between the test program and the Pomodoro timer microservice:
 
 ![UML Sequence Diagram](./UML%20-%20Pomodoro%20Timer%20Session.png)
 
