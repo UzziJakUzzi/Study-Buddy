@@ -1,0 +1,58 @@
+
+
+Microservice A
+````
+
+import express from "express";
+import cors from "cors";
+
+const app = express();
+const PORT = 3001;
+
+app.use(cors());
+app.use(express.json());
+
+app.post("/start-timer", (req, res) => {
+  const { duration } = req.body;
+
+  if (!duration || typeof duration !== "number" || duration <= 0) {
+    return res.status(400).json({ error: "Invalid or missing 'duration' field." });
+  }
+
+  const start = new Date();
+  const end = new Date(start.getTime() + duration * 60000); 
+
+  res.json({
+    message: `Pomodoro timer started for ${duration} minutes.`,
+    start_time: start.toISOString(),
+    end_time: end.toISOString()
+  });
+});
+
+app.listen(PORT, () => {
+  console.log(`Pomodoro Timer Microservice running at http://localhost:${PORT}`);
+});
+````
+Test
+````
+
+import fetch from 'node-fetch';
+
+const timerData = {
+  duration: 25
+};
+
+try {
+  const response = await fetch("http://localhost:3001/start-timer", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(timerData)
+  });
+
+  const data = await response.json();
+  console.log("Response from Pomodoro Timer Microservice:", data);
+} catch (error) {
+  console.error("Error calling microservice:", error.message);
+}
+
+````
